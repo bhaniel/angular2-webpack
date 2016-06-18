@@ -45,7 +45,7 @@ export class GroupService{
     var self = this;
     editRef.on('value', function(snapshot){
       self.group = {
-        id: snapshot.key(),
+        id: snapshot.key,
         name: snapshot.val().name
       }
     });
